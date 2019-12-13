@@ -1,0 +1,62 @@
+:active, :hover, :focus {
+    outline: 0;
+    outline-offset: 0;
+}
+
+
+.sliderWrapper {
+    width: 960px;
+    min-height: 544px;
+    background: #ada4a4;
+    margin: 10px;
+    position: relative;
+    display: block;
+    margin: 0 auto;
+}
+.sliderImg {
+    position: absolute;
+    width: 960px;
+    height: 544px;
+    opacity: 0;
+    transition: opacity 1s;
+    display: block;
+    
+}
+img.showedImg {
+    opacity: 1;
+    
+}
+
+.sliderControlBtnLeft {
+    top: 242px;
+    left: 5px;
+    position: absolute;
+    height: 60px;
+    width: 60px;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.4);
+    background-image: url(images/arrow.svg);
+    background-size: 40px 40px;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 3px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.sliderControlBtnRight {
+    top: 242px;
+    right: 5px;
+    position: absolute;
+    height: 60px;
+    width: 60px;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.4);
+    background-image: url(images/arrow.svg);
+    background-size: 40px 40px;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 3px;
+    border-radius: 50%;
+    transform: rotate(180deg);
+    cursor: pointer;
+}
